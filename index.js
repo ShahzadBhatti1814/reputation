@@ -1,39 +1,35 @@
 let emptyArray = [];
-let userObject = {
-    name: "Shahzad Bhatti",
-    email: "sb393310@gmail.com",
-    password: "shahzad123"
-};
- const result = emptyArray.push(userObject);
-console.log(emptyArray);
 
+console.log(localStorage.getItem("userObject"));
 let users = [];
-
 function signup() {
     const name = document.getElementById('name').value;
-    const email = document.getElementById('sb393310@gmail.com').value;
-    const password = document.getElementById('@shahzad123').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
     const userObject = {
         name: name,
         email: email,
         password: password
     };
-  const use  =   users.push(userObject);
-    console.log(use);
+    localStorage.setItem("userObject",JSON.stringify(userObject))
+    
+    users.push(userObject);
+    window.location.href = "save.html";
 }
 
 function login() {
-    const email = document.getElementById('loginEmail').value;
-    const password = document.getElementById('loginPassword').value;
-    
-   
-    const user = users.find(u => u.email === email && u.password === password);
-    
+    //yar kinta band mara howa ha yar tmna
+    console.log("checking")
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const user = users.find(user => user.email === email && user.password === password);
+
     if (user) {
-        
-        window.href = 'hello.html';
+        alert('Login successful!');
+        window.location.href = "hello.html";
     } else {
-       
-        document.getElementById('loginMessage').textContent = 'Invalid email or password!';
+        alert('Invalid email or password. Please try again.');
     }
+    localStorage.setItem("userName", user.name);
+    return;
 }
