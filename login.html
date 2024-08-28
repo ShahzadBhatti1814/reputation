@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <a href="signup.html"></a>
 </head>
 <body>
-    <a href="signup.html"></a>
-    <h1>login Page</h1>
-    <div id="login">
-   
-
-        <label for="email">Email:</label>
-        <input type="email" id="email"  placeholder="Enter your email"><br><br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" placeholder="Enter your password"><br><br>
-        <button type="button" onclick="login()">login</button>
-    </div>
+    <div class="container">
+        <div class="login">
+            <h2>Login</h2>
+                <div class="input-group">
+                    <label for="email">email</label>
+                    <input type="text" id="email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                </div>
+                <button type="button" onclick="login()">login</button>
+        </div>
+        </div>
     <p id="message"></p>
     <script src="index.js"></script>
 </body>
