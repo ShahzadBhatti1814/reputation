@@ -1,0 +1,316 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+	height: 80px;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 20px;
+}
+
+#navbar h1 img {
+	height: 30px;
+}
+
+#navbar ul {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+}
+
+#navbar ul li {
+	margin: 0 10px;
+	font-size: 12px;
+	font-weight: bolder;
+}
+
+#navbar ul li a {
+	text-decoration: none;
+	color: #000;
+}
+
+.search-icon {
+	font-size: 14px;
+}
+
+.menu-icon {
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.vertical-line {
+	border-left: 1px solid #ccc;
+	height: 40px;
+	margin: 0 1px;
+}
+
+#work {
+	display: inline;
+	font-size: 17px;
+}
+
+.code {
+	height: auto;
+	width: 100%;
+}
+
+.code h1 {
+	font-size: 30px;
+	text-align: start;
+	justify-content: start;
+	margin-left: 230px;
+}
+
+.code p {
+	font-size: 20px;
+	text-align: start;
+	justify-content: start;
+	margin-left: 170px;
+}
+
+.code button {
+	display: block;
+	margin-left: 270px;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: 2px solid black;
+	color: black;
+	cursor: pointer;
+}
+
+.code button:hover {
+	background-color: #0056b3;
+}
+
+#container {
+	height: 400px;
+	width: 600px;
+	margin-left: 700px;
+	margin-bottom: 140px;
+	margin-top: 0px;
+	position: relative;
+}
+
+.type-const {
+	text-align: end;
+}
+
+.type-const h1 {
+	font-size: 32px;
+	margin-right: 170px;
+}
+
+.type-const p {
+	font-size: 18px;
+	margin-bottom: 20px;
+	margin-right: 230px;
+}
+
+.type-const button {
+	align-items: end;
+	justify-content: end;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: 2px solid black;
+	color: black;
+	margin-right: 249px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.type-const button:hover {
+	background-color: #0056b3;
+}
+
+.read {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 40px 20px;
+}
+
+.image-section {
+	text-align: center;
+	margin: 20px;
+	max-width: 600px;
+}
+
+.image-section img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.nested-content {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.nested-content h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.nested-content p1 {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.nested-content button1 {
+	padding: 10px 20px;
+	font-size: 16px;
+	border: 2px solid black;
+	color: #000;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#act {
+	text-align: center;
+	padding: 40px 20px;
+}
+
+#act h1 {
+	font-size: 32px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#act p {
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+#let h1 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}#pics {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 40px 20px;
+}
+
+.product-item {
+	width: 24%; 
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.product-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.product-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.product-info p {
+	font-size: 16px;
+	margin-bottom: 10px;
+	color: darkred;
+}
+
+.product-info button {
+	padding: 10px 20px;
+	font-size: 16px;
+	border: 2px solid black;
+	color: black;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.product-info button:hover {
+	background-color: #0056b3;
+}
+@media (max-width: 768px) {
+	#navbar {
+		display: flex;
+		height: auto;
+	}
+
+	#navbar h1 img {
+		height: 20px;
+		margin-left: 0;
+	}
+
+	#navbar ul {
+		display: none;
+	}
+
+	.menu-icon {
+		display: block;
+	}
+
+	#navbar .search-icon,
+	#navbar .vertical-line,
+	#navbar .text {
+		margin-left: 0;
+	}
+
+	.code h1,
+	.code p {
+		margin-left: 0;
+		text-align: center;
+	}
+.code button{
+	margin-left: 80px;
+	text-align: center;
+}
+	#container {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 0; 
+	}
+
+	.type-const {
+		top: 0px;
+		text-align: center; 
+		margin: 20px 0;
+	}
+
+	.type-const h1 {
+		display: flex;
+		font-size: 32px;
+		margin: 20px 0; 
+	}
+
+	.type-const p {
+		font-size: 18px;
+		margin: 10px 0;
+	}
+
+	.type-const button {
+		margin: 10px 0; 
+	}
+	#pics {
+        display:inline-flex;
+        align-items: center;
+		text-align: center;
+    }
+
+    .product-item {
+        width: 80%; 
+        margin-bottom: 20px;
+    }
+	
+	}
