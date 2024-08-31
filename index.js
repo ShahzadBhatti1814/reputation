@@ -25,7 +25,10 @@ function login() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const users = JSON.parse(localStorage.getItem("usersArray")) || [];
-
+    if ( !email || !password) {
+        alert("Please fill in all fields.");
+        return;
+    }
     const user = users.find(
         (user) => user.email === email && user.password === password
     );
