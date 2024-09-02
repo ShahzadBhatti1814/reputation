@@ -40,7 +40,10 @@ function login() {
         alert("Invalid email or password. Please try again.");
     }
 }
-
+function logout() {
+    localStorage.removeItem("loggedInUser");
+    window.location.href = "login.html";
+}
 document.addEventListener("DOMContentLoaded", function () {
     const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
     const currentPath = window.location.pathname;
@@ -62,3 +65,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
