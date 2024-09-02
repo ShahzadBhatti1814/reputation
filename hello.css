@@ -60,7 +60,7 @@
 }
 
 .code {
-	height: auto;
+	height:500px ;
 	width: 100%;
 }
 
@@ -75,12 +75,12 @@
 	font-size: 20px;
 	text-align: start;
 	justify-content: start;
-	margin-left: 140px;
+	margin-left: 150px;
 }
 
 .code button {
 	display: block;
-	margin-left: 250px;
+	margin-left: 245px;
 	padding: 10px 20px;
 	font-size: 16px;
 	border: 2px solid black;
@@ -96,8 +96,8 @@
 	height: 400px;
 	width: 600px;
 	margin-left: 700px;
-	margin-bottom: 140px;
 	margin-top: 0px;
+	margin-bottom: 140px;
 	position: relative;
 }
 
@@ -213,7 +213,7 @@
 
 .product-item img {
 	width: 100%;
-	height: auto;
+	height: 400px;
 	display: block;
 	margin-bottom: 10px;
 }
@@ -309,6 +309,7 @@
         display:inline-flex;
         align-items: center;
 		text-align: center;
+		height: 250px;
     }
 
     .product-item {
