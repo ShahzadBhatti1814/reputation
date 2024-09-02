@@ -80,7 +80,7 @@
 
 .code button {
 	display: block;
-	margin-left: 280px;
+	margin-left: 250px;
 	padding: 10px 20px;
 	font-size: 16px;
 	border: 2px solid black;
@@ -107,7 +107,7 @@
 
 .type-const h1 {
 	font-size: 32px;
-	margin-right: 170px;
+	margin-right: 160px;
 }
 
 .type-const p {
@@ -249,7 +249,7 @@
 	}
 
 	#navbar h1 img {
-		height: 20px;
+		height: 40px;
 		margin-left: 0;
 	}
 
@@ -267,13 +267,16 @@
 		margin-left: 0;
 	}
 
-	.code h1,
-	.code p {
+	.code h1{
+		margin-left: 20px;
+		text-align: center;
+	}
+	.code p{
 		margin-left: 0;
 		text-align: center;
 	}
 .code button{
-	margin-left: 80px;
+	margin-left: 120px;
 	text-align: center;
 }
 	#container {
@@ -291,7 +294,7 @@
 	.type-const h1 {
 		display: flex;
 		font-size: 32px;
-		margin: 20px 0; 
+		margin: 0px 40px; 
 	}
 
 	.type-const p {
