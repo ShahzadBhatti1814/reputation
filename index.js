@@ -48,8 +48,10 @@ document.addEventListener("DOMContentLoaded", function () {
     function checkUserAuthentication() {
         const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
         const currentPath = window.location.pathname;
-        if (loggedInUser) {
-            if (currentPath.endsWith("signup.html") || currentPath.endsWith("login.html")) {
+        const isAuthenticated = !!loggedInUser;
+
+        if (isAuthenticated) {
+            if (currentPath.endsWith("index.html") || currentPath.endsWith("login.html")) {
                 window.location.href = "hello.html";
             } else if (currentPath.endsWith("hello.html")) {
                 const userNameElement = document.getElementById("username");
@@ -63,5 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     }
+    
     checkUserAuthentication();
 });
